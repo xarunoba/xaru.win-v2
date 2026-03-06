@@ -27,9 +27,9 @@ const Hero = ({ heroRef, heroTextRef }) => {
         <h1 className="hero-text-part font-heading font-bold text-5xl md:text-7xl lg:text-8xl text-primary tracking-tighter leading-[0.9] mb-2 uppercase">
           Learning and
         </h1>
-        <h2 className="hero-text-part font-drama italic text-7xl md:text-9xl lg:text-[10rem] text-primary tracking-tight leading-[0.8] mb-12">
+        <p className="hero-text-part font-drama italic text-7xl md:text-9xl lg:text-[10rem] text-primary tracking-tight leading-[0.8] mb-12">
           Building.
-        </h2>
+        </p>
 
         <div className="hero-cta">
           <a

@@ -12,7 +12,7 @@ const ProfileSection = () => {
 
       {/* Individual Details & Tech Stack */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-16 items-start mb-32">
-        <div className="md:col-span-4 font-data text-sm text-dark/50 uppercase tracking-widest flex flex-col gap-8">
+        <aside className="md:col-span-4 font-data text-sm text-dark/50 uppercase tracking-widest flex flex-col gap-8">
           <div className="flex items-center gap-4">
             <User size={16} /> Individual Details
           </div>
@@ -30,7 +30,7 @@ const ProfileSection = () => {
               <span>Developer Tooling & DevOps</span>
             </div>
           </div>
-        </div>
+        </aside>
 
         <div className="md:col-span-8">
           <h2 className="font-heading font-bold text-3xl md:text-5xl mb-6 tracking-tight uppercase">Jude.</h2>

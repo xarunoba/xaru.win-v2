@@ -80,10 +80,12 @@ function App() {
   return (
     <div className="bg-background min-h-screen">
       <Navbar />
-      <Hero heroRef={heroRef} heroTextRef={heroTextRef} />
-      <ProfileSection />
-      <ProjectShowcase />
-      <Philosophy philosophyRef={philosophyRef} />
+      <main>
+        <Hero heroRef={heroRef} heroTextRef={heroTextRef} />
+        <ProfileSection />
+        <ProjectShowcase />
+        <Philosophy philosophyRef={philosophyRef} />
+      </main>
       <Footer />
     </div>
   );

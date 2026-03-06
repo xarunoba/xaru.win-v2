@@ -17,31 +17,34 @@ const ProjectShowcase = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((p, i) => (
-            <a
+            <article
               key={i}
-              href={p.url}
-              target="_blank"
-              rel="noopener noreferrer"
               className="showcase-card group block border border-primary/20 bg-dark hover:border-accent transition-colors relative overflow-hidden"
             >
-              <div className="aspect-video bg-dark/50 border-b border-primary/20 p-2 overflow-hidden relative">
-                <img
-                  src={p.img}
-                  alt={p.name}
-                  className="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
-                />
-              </div>
-              <div className="p-6 md:p-8 flex items-center justify-between z-10 relative bg-dark">
-                <div>
-                  <div className="font-data text-xs text-accent uppercase tracking-widest mb-2">{p.tag}</div>
-                  <h3 className="font-heading font-bold text-2xl uppercase tracking-tighter">{p.name}</h3>
-                  <p className="font-data text-sm text-primary/60 mt-2">{p.desc}</p>
+              <a
+                href={p.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="aspect-video bg-dark/50 border-b border-primary/20 p-2 overflow-hidden relative">
+                  <img
+                    src={p.img}
+                    alt={p.name}
+                    className="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                  />
                 </div>
-                <div className="w-12 h-12 flex items-center justify-center border border-primary/20 group-hover:bg-accent group-hover:border-accent group-hover:text-dark transition-all duration-300 transform group-hover:-translate-y-1 group-hover:translate-x-1">
-                  <ArrowUpRight size={20} />
+                <div className="p-6 md:p-8 flex items-center justify-between z-10 relative bg-dark">
+                  <div>
+                    <div className="font-data text-xs text-accent uppercase tracking-widest mb-2">{p.tag}</div>
+                    <h3 className="font-heading font-bold text-2xl uppercase tracking-tighter">{p.name}</h3>
+                    <p className="font-data text-sm text-primary/60 mt-2">{p.desc}</p>
+                  </div>
+                  <div className="w-12 h-12 flex items-center justify-center border border-primary/20 group-hover:bg-accent group-hover:border-accent group-hover:text-dark transition-all duration-300 transform group-hover:-translate-y-1 group-hover:translate-x-1">
+                    <ArrowUpRight size={20} />
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </article>
           ))}
         </div>
       </div>
