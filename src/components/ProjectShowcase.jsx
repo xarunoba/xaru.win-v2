@@ -3,6 +3,13 @@ import { ArrowUpRight, Code2 } from "lucide-react";
 const ProjectShowcase = () => {
   const projects = [
     {
+      name: "Davao Oriental State University Library",
+      tag: "Vue.js / Portal",
+      desc: "A handmade library portal for DOrSU.",
+      url: "https://dorsulibrary.net",
+      img: "/dorsu_library.png",
+    },
+    {
       name: "ccoco",
       tag: "Go / CLI",
       desc: "Change configurations on checkout.",
@@ -22,13 +29,6 @@ const ProjectShowcase = () => {
       desc: "Parse env vars to typed structs in Zig.",
       url: "https://github.com/xarunoba/env-struct.zig",
       img: "https://opengraph.githubassets.com/1/xarunoba/env-struct.zig",
-    },
-    {
-      name: "Davao Oriental State University Library",
-      tag: "Vue.js / Portal",
-      desc: "A handmade library portal for DOrSU.",
-      url: "https://dorsulibrary.net",
-      img: "/dorsu_library.png",
     },
   ];
 
