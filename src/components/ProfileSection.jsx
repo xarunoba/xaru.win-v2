@@ -14,7 +14,7 @@ const ProfileSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-16 items-start mb-32">
         <aside className="md:col-span-4 font-data text-sm text-dark/50 uppercase tracking-widest flex flex-col gap-8">
           <div className="flex items-center gap-4">
-            <User size={16} /> Individual Details
+            <User size={16} /> Profile
           </div>
           <div className="flex flex-col gap-4">
             <div className="border border-dark/20 px-4 py-2 font-data text-xs uppercase text-dark bg-dark/5 flex items-center justify-between">
