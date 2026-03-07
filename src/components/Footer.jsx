@@ -19,7 +19,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="font-data text-xs text-primary/60 tracking-widest">
-          Copright {new Date().getFullYear()} xarunoba.
+          Copyright {new Date().getFullYear()} xarunoba.
         </div>
       </div>
     </footer>
